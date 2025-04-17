@@ -1,13 +1,6 @@
 <script setup>
 import MainHeader from '@/components/MainHeader.vue'
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from '@/components/ui/card'
+import RateCard from '@/components/RateCard.vue'
 </script>
 
 <template>
@@ -15,15 +8,11 @@ import {
     <MainHeader />
     <main>
       <section>
-        <div>
-          <Card>
-            <CardHeader>
-              <CardTitle>Card Title</CardTitle>
-              <CardDescription>Card Description</CardDescription>
-            </CardHeader>
-            <CardContent> Card Content </CardContent>
-            <CardFooter> Card Footer </CardFooter>
-          </Card>
+        <div class="flex gap-8">
+          <RateCard />
+          <RateCard />
+          <RateCard />
+          <RateCard />
         </div>
       </section>
     </main>

@@ -1,7 +1,7 @@
 <template>
-  <header class="flex items-center justify-between p-4">
-    <div class="flex items-center">
-      <p class="text-xl">SphereAI</p>
+  <header class="flex items-center justify-between py-6 px-8 mx-auto mt-8 mb-12 w-[85%] border-2 rounded-[50px] border-gray-300 bg-white shadow-md">
+    <div class="flex items-center ">
+      <p class="text-2xl">SphereAI Dashboard</p>
     </div>
     <nav>
       <div>
