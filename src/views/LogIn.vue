@@ -1,8 +1,4 @@
-<script>
-export const description = 'A simple email-only login page.'
-</script>
-
-<script setup lang="ts">
+<script setup>
 import LoginForm from '@/components/LoginForm.vue'
 </script>
 

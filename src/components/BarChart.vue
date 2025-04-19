@@ -1,6 +1,6 @@
 <template>
   <div class="w-1/2 h-96 border rounded-3xl shadow-2xl bg-white px-5 py-5">
-    <Bar :data="data" :options="options"  />
+    <Bar :data="data" :options="options" />
   </div>
 </template>
 
@@ -15,7 +15,7 @@ import {
   LinearScale,
 } from 'chart.js'
 import { Bar } from 'vue-chartjs'
-import * as chartConfig from './utils/barchartConfigs.js'
+import * as chartConfig from '../utils/barchartConfigs.js'
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend)
 

@@ -4,6 +4,7 @@ import RateCard from '@/components/RateCard.vue'
 import BarChart from '@/components/BarChart.vue'
 import PieChart from '@/components/PieChart.vue'
 import LineChart from '@/components/LineChart.vue'
+import RecentTable from '@/components/RecentTable.vue'
 </script>
 
 <template>
@@ -26,6 +27,12 @@ import LineChart from '@/components/LineChart.vue'
           <div>
             <LineChart />
           </div>
+        </div>
+      </section>
+      <section>
+        <div>
+          <h1 class="text-2xl font-semibold">Recent Calls</h1>
+          <RecentTable />
         </div>
       </section>
     </main>

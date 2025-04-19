@@ -7,7 +7,7 @@
       <div>
         <DropdownMenu>
           <DropdownMenuTrigger as-child>
-            <Button>
+            <Button variant="ghost" class="w-10 h-10">
               <Settings />
             </Button>
           </DropdownMenuTrigger>
@@ -15,7 +15,7 @@
           <DropdownMenuContent class="w-60">
             <DropdownMenuLabel>abiodun@mail.com</DropdownMenuLabel>
             <DropdownMenuSeparator />
-            <DropdownMenuItem>
+            <DropdownMenuItem @click.prevent="handleLogout">
               <span>Log In</span>
               <DropdownMenuShortcut>⇧⌘Q</DropdownMenuShortcut>
             </DropdownMenuItem>
@@ -28,6 +28,7 @@
 
 <script setup>
 import { Settings } from 'lucide-vue-next'
+import { Button } from './ui/button'
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -37,6 +38,17 @@ import {
   DropdownMenuShortcut,
   DropdownMenuTrigger,
 } from './ui/dropdown-menu'
+import { useRouter } from 'vue-router'
+
+const router = useRouter()
+const handleLogout = () => {
+  try {
+    // Add any logout logic here (clearing localStorage, etc)
+    router.push({ name: 'login' })
+  } catch (error) {
+    console.error('Navigation error:', error)
+  }
+}
 </script>
 
 <style scoped></style>
