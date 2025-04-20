@@ -1,13 +1,11 @@
-// src/googleService.js
-
-const CLIENT_ID = 'YOUR_CLIENT_ID'
-const API_KEY = 'YOUR_API_KEY'
+/* eslint-disable no-undef */
+const CLIENT_ID = import.meta.env.VITE_CLIENT_ID
+const API_KEY = import.meta.env.VITE_API_KEY
 const DISCOVERY_DOCS = [
   'https://sheets.googleapis.com/$discovery/rest?version=v4',
   'https://www.googleapis.com/discovery/v1/apis/drive/v3/rest',
 ]
-const SCOPES =
-  'https://www.googleapis.com/auth/drive.file https://www.googleapis.com/auth/spreadsheets'
+const SCOPES = 'https://www.googleapis.com/auth/drive.file https://www.googleapis.com/auth/spreadsheets'
 
 export default {
   initClient() {

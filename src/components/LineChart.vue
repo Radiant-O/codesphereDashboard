@@ -16,7 +16,7 @@ import {
   Legend,
 } from 'chart.js'
 import { Line } from 'vue-chartjs'
-import * as chartConfig from '../utils/linechartConfig.js'
+import * as chartConfig from '../lib/linechartConfig.js'
 
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend)
 
